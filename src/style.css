@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Malibu;
+    src: url(../resources/fonts/Malibu/malibu-1.ttf);
+}
+
+@font-face {
+    font-family: Cormorant_Garamond;
+    src: url(../resources/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cormorant_Garamond;
+    src: url(../resources/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(2, 241, 285, 0)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #999599;
+    border-radius: 1vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #59606C;
+}
+
+body {
+    background: #E9E9F4;
+    font-family: Cormorant_Garamond;
+    color: #331243;
+    margin: 0;
+    padding: 20vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: space-between;
+}
+
+#maha, #amp {
+    font-family: Malibu;
+}
+
+#marwan, #maha {
+    color: #331243;
+    line-height: 100%;
+    margin: 0;
+    text-shadow: 0.3vw 0.5vh 15px #33124389;
+}
+
+#date, #amp {
+    color: #758EB7;
+    text-shadow: 0.3vw 0.5vh 15px #758eb789;
+
+}
+
+#maha {
+    font-size: 10vw;
+    padding: 0% 2vw;
+}
+
+#date {
+    font-size: 7vw;
+    margin: 0;
+}
+
+#amp {
+    font-size: 18vw;
+    line-height: 100%;
+    margin: 0;
+    padding: 0% 4vw;
+}
+
+#marwan {
+    font-size: 10vw;
+    text-transform: uppercase;
+    letter-spacing: 1.3vw;
+}
+
+.maha_date, .bottom .marwan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.maha_date {
+    margin: 0% 20vw 0% 10vw;
+}
+
+.bottom .marwan {
+    margin-top: 2vw;
+    align-items: flex-start;
+}
+
+ul li {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 0% 1vw;
+}
+
+ul {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:#758EB7;
+    transition: color 0.5s;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.text {
+    width: 70%;
+}
+
+.left_flower, .right_flower {
+    width: 13%;
+    display: flex;
+}
+
+.left_flower img, .right_flower img {
+    width: 100%;
+}
+
+.left_flower img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
