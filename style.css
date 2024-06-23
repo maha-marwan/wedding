@@ -1,16 +1,16 @@
 @font-face {
     font-family: Malibu;
-    src: url(../resources/fonts/Malibu/malibu-1.ttf);
+    src: url(resources/fonts/Malibu/malibu-1.ttf);
 }
 
 @font-face {
     font-family: Cormorant_Garamond;
-    src: url(../resources/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+    src: url(resources/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
 }
 
 @font-face {
     font-family: Cormorant_Garamond;
-    src: url(../resources/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+    src: url(resources/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
     font-weight: bold;
 }
 
