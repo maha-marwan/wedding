@@ -56,10 +56,31 @@ body {
     justify-content: space-between;
 }
 
+.dropdown {
+    margin: 3vh 0 4vh 0;
+}
+
+.content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0%;
+    margin: 0;
+}
+
+.content li {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 5.5vw;
+    padding: 0% 1vw;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
-    min-height: 60vh;
+    min-height: max-content;
     justify-content: space-between;
 }
 
@@ -311,4 +332,12 @@ a:hover {
     text-transform: uppercase;
     padding: 0.5vw 0;
     font-weight: 500;
+}
+
+.no_show {
+    display: none;
+}
+
+a {
+    font-weight: 600;
 }
