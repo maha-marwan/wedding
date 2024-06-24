@@ -6,12 +6,19 @@
 @font-face {
     font-family: Cormorant_Garamond;
     src: url(resources/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
     font-family: Cormorant_Garamond;
     src: url(resources/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
-    font-weight: bold;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Cormorant_Garamond;
+    src: url(resources/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+    font-weight: 600;
 }
 
 /* width */
@@ -35,9 +42,12 @@
     background: #59606C;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
     background: #E9E9F4;
     font-family: Cormorant_Garamond;
+    font-weight: 400;
     color: #331243;
     margin: 0;
     padding: 20vh 0 0 0;
@@ -49,7 +59,7 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 60vh;
     justify-content: space-between;
 }
 
@@ -106,18 +116,19 @@ body {
 
 .bottom .marwan {
     margin-top: 2vw;
-    align-items: flex-start;
+    align-items: center;
 }
 
-ul li {
+.nav_links ul li {
     list-style-type: none;
     font-weight: bold;
     font-size: 2.5vw;
     padding: 0% 1vw;
 }
 
-ul {
-    margin-top: 3vw;
+.nav_links ul {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -156,4 +167,148 @@ a:hover {
 .left_flower img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+
+.about {
+    background-color: #758EB7;
+    box-shadow: 0.3vw 0.5vh 15px #33124389;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 15vw;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1vw 0%;
+    align-items: center;
+}
+
+.about .container h2 {
+    font-family: Malibu;
+    width: 30%;
+    color: #331243;
+    font-size: 3.3vw;
+}
+
+.about .container p {
+    width: 60%;
+    font-weight: 500;
+    font-size: 1.65vw;
+    color: #E9E9F4;
+}
+
+.venue {
+    display: flex;
+    flex-direction: row;
+    padding: 8vh 15vw;
+}
+
+.venue h2 {
+    font-family: Cormorant_Garamond;
+    font-weight: 600;
+    color: #331243;
+    font-size: 3.3vw;
+    margin: 1vw 0;
+    text-align: center;
+
+}
+
+.venue .container {
+    display: flex;
+    flex-direction: column;
+    color: #331243;
+    align-items: center;
+    width: 50%;
+    padding: 1vw;
+    margin: 0.5vw 0.5vw;
+}
+
+
+.venue .container p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2.2vw;
+}
+
+.venue .container_rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #758eb78f;
+    width: 50%;
+    padding: 1vw;
+    margin: 0.5vw 0.5vw;
+    border-radius: 0.2vw;
+}
+
+.venue .container_rules h2 {
+    font-size: 3vw;
+    font-family: Cormorant_Garamond;
+    font-weight: 600;
+}
+
+.venue .container_rules ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.venue .container_rules ul li {
+    font-size: 1.5vw;
+    padding: 0.5vw 0;
+    list-style-type: circle;
+}
+
+.venue .container_rules ul li, .venue p {
+    font-weight: 500;
+}
+
+.rsvp {
+    background-color: #758EB7;
+    box-shadow: 0.3vw 0.5vh 15px #33124389;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 15vw;
+    align-items: center;
+}
+
+.rsvp p {
+    font-size: 3.15vw;
+    font-family: Cormorant_Garamond;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rsvp button {
+    font-family: Cormorant_Garamond;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+    background-color: #331243;
+    border: #331243;
+    padding: 4vh 8vw;
+    border-radius: 0.2vw;
+    color: #E9E9F4;
+    width: fit-content;
+    margin-right: 2vw;
+    margin-bottom: 6vh;
+}
+
+.rsvp button:hover {
+    background-color:#33124389;
+    transition: background-color 0.8s;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #331243;
+    color: #E9E9F4;
+    text-transform: uppercase;
+    padding: 0.5vw 0;
+    font-weight: 500;
 }
