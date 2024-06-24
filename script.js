@@ -2,7 +2,10 @@ window.addEventListener("load", () => {
     mobileView();
 })
 
-window.addEventListener("resize", mobileView);
+window.addEventListener("resize", () => {
+    window.location.reload();
+    mobileView();
+});
 
 function mobileView() {
     if (window.matchMedia('screen and (max-width: 450px)').matches) {
