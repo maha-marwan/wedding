@@ -1,10 +1,5 @@
 window.addEventListener("load", () => {
     mobileView();
-})
-
-window.addEventListener("resize", () => {
-    window.location.reload();
-    mobileView();
 });
 
 function mobileView() {
