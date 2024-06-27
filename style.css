@@ -21,6 +21,18 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: Amiri;
+    src: url(resources/fonts/Amiri/Amiri-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Amiri;
+    src: url(resources/fonts/Amiri/Amiri-Bold.ttf);
+    font-weight: bold;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 0.5vw;
@@ -190,7 +202,7 @@ a:hover {
     transform: scaleX(-1);
 }
 
-.about {
+.hadeeth {
     background-color: #758EB7;
     box-shadow: 0.3vw 0.5vh 15px #33124389;
     display: flex;
@@ -198,26 +210,45 @@ a:hover {
     padding: 5vh 15vw;
 }
 
-.about .container {
+.hadeeth .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin: 1vw 0%;
-    align-items: center;
+    /* align-items: center; */
+    text-align: left;
 }
 
-.about .container h2 {
-    font-family: Malibu;
-    width: 30%;
+.arabic {
+    font-family: Amiri;
+    font-weight: 400;
+    text-align: right;
+}
+
+.hadeeth .container h2 {
     color: #331243;
-    font-size: 3.3vw;
+    font-size: 2.75vw;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-bottom: 1.25vh;
 }
 
-.about .container p {
-    width: 60%;
+.hadeeth .container p {
     font-weight: 500;
-    font-size: 1.65vw;
+    font-size: 2vw;
     color: #E9E9F4;
+}
+
+.hadeeth .container span {
+    font-size: 1.75vw;
+    color: #E9E9F4;
+    font-weight: 400;
+}
+
+#narrator {
+    padding-top: 1.25vh;
+    margin-bottom: 0;
+    padding-bottom: 1.5vh;
 }
 
 .venue {
@@ -230,7 +261,7 @@ a:hover {
     font-family: Cormorant_Garamond;
     font-weight: 600;
     color: #331243;
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     margin: 1vw 0;
     text-align: center;
 
@@ -277,7 +308,7 @@ a:hover {
 }
 
 .venue .container_rules ul li {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     padding: 0.5vw 0;
     list-style-type: circle;
 }

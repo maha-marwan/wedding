@@ -4,15 +4,15 @@ window.addEventListener("load", () => {
 
 function mobileView() {
     if (window.matchMedia('screen and (max-width: 450px)').matches) {
-        console.log(document.getElementById("dropdown").classList)
-        document.getElementById("dropdown").classList.toggle("no_show");
-        document.getElementsByClassName("nav_links")[0].classList.toggle("no_show");
+        // console.log(document.getElementById("dropdown").classList)
+        // document.getElementById("dropdown").classList.toggle("no_show");
+        // document.getElementsByClassName("nav_links")[0].classList.toggle("no_show");
 
         var body = document.body;
         body.style.padding = "0 0 0 0";
 
         var intro = document.getElementsByClassName("intro")[0];
-        intro.style.paddingTop = "3vh";
+        intro.style.paddingTop = "8vh";
 
         // maha text
         var maha = document.getElementById("maha");
@@ -50,24 +50,41 @@ function mobileView() {
         date_new.setAttribute('id', "date");
         marwan_container.appendChild(date_new);
 
-        // about section
-        var about = document.getElementsByClassName("about")[0];
-        about.style.padding = "3vh 8vw"
-        for (let i = 0; i < about.children.length; i++) {
-            const container = about.children[i];
-            container.style.flexDirection = "column";
-            container.style.justifyContent = "flex-start";
+        // hadeeth section
+        var hadeeth = document.getElementsByClassName("hadeeth")[0];
+        hadeeth.style.padding = "3vh 8vw";
 
-            // modify h1
-            container.children[0].style.fontSize = "7.5vw";
-            container.children[0].style.width = "100%";
-            container.children[0].style.marginBottom = "0%";
+        hadeeth = hadeeth.children[0];
 
-            // modify p
-            container.children[1].style.fontSize = "3.5vw";
-            container.children[1].style.width = "100%";
-            container.children[1].style.marginBottom = "4vh";
-        }
+        var narrator_arb = hadeeth.children[0];
+        var text_arb = hadeeth.children[1];
+        var narrator_eng = hadeeth.children[2];
+        var text_eng = hadeeth.children[3];
+
+        narrator_arb.style.fontSize = "4.35vw";
+        text_arb.style.fontSize = "5.75vw"
+        text_arb.children[0].style.fontSize = "3.9vw";
+        narrator_eng.style.fontSize = "4.3vw";
+        text_eng.style.fontSize = "5.75vw";
+        text_eng.children[0].style.fontSize = "3.9vw";
+        
+
+        // about.style.padding = "3vh 8vw"
+        // for (let i = 0; i < about.children.length; i++) {
+        //     const container = about.children[i];
+        //     container.style.flexDirection = "column";
+        //     container.style.justifyContent = "flex-start";
+
+        //     // modify h1
+        //     container.children[0].style.fontSize = "7.5vw";
+        //     container.children[0].style.width = "100%";
+        //     container.children[0].style.marginBottom = "0%";
+
+        //     // modify p
+        //     container.children[1].style.fontSize = "3.5vw";
+        //     container.children[1].style.width = "100%";
+        //     container.children[1].style.marginBottom = "4vh";
+        // }
 
         // venue section
         var venue = document.getElementsByClassName("venue")[0];
