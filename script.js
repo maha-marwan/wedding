@@ -99,7 +99,7 @@ function mobileView() {
         venue_info.children[0].innerText = "Premier Event Halls";
         venue_info.children[1].style.fontSize = "4.5vw";
         venue_info.children[2].style.fontSize = "4.5vw";
-        venue_info.children[2].innerHTML = "<span style='font-weight:600;'>Date:</span> 12.29.2024 | 5 pm - 10 pm";
+        venue_info.children[2].innerHTML = "<span style='font-weight:600;'>Date:</span> 12.29.2024 | 2 pm - 7 pm";
 
         // reception details
         var reception_details = venue.children[1];
