@@ -251,10 +251,20 @@ a:hover {
     padding-bottom: 1.5vh;
 }
 
+.reception_date {
+    padding-top: 8vh;
+    font-weight: 600;
+    font-size: 3.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .venue {
     display: flex;
     flex-direction: row;
-    padding: 8vh 15vw;
+    padding: 0 15vw;
+    justify-content: space-between;
 }
 
 .venue h2 {
@@ -263,7 +273,7 @@ a:hover {
     color: #331243;
     font-size: 3.5vw;
     margin: 1vw 0;
-    text-align: center;
+    /* text-align: center; */
 
 }
 
@@ -271,49 +281,50 @@ a:hover {
     display: flex;
     flex-direction: column;
     color: #331243;
-    align-items: center;
-    width: 50%;
-    padding: 1vw;
+    justify-content: space-between;
+    width: 43%;
+    padding: 1vw 3vw;
     margin: 0.5vw 0.5vw;
+    background-color: #758eb78f;
+    border-radius: 0.2vw;
 }
 
 
 .venue .container p {
-    text-align: center;
-    margin-bottom: 0;
     font-size: 2.2vw;
+    font-weight: 500;
 }
 
-.venue .container_rules {
+.container_rules {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #758eb78f;
-    width: 50%;
     padding: 1vw;
-    margin: 0.5vw 0.5vw;
-    border-radius: 0.2vw;
+    padding: 8vh 15vw;
+    padding-top: 0;
 }
 
-.venue .container_rules h2 {
+.container_rules h2 {
     font-size: 3vw;
     font-family: Cormorant_Garamond;
     font-weight: 600;
+    margin-bottom: 1vw;
 }
 
-.venue .container_rules ul {
+.container_rules ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 1vw;
 }
 
-.venue .container_rules ul li {
-    font-size: 1.75vw;
+.container_rules ul li {
+    font-size: 2vw;
     padding: 0.5vw 0;
     list-style-type: circle;
 }
 
-.venue .container_rules ul li, .venue p {
+.container_rules ul li {
     font-weight: 500;
 }
 
@@ -370,5 +381,9 @@ a:hover {
 }
 
 a {
+    font-weight: 600;
+}
+
+.bold {
     font-weight: 600;
 }
