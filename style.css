@@ -335,6 +335,7 @@ a:hover {
     flex-direction: column;
     padding: 5vh 15vw;
     align-items: center;
+    padding-bottom: 8vh;
 }
 
 .rsvp p {
@@ -342,6 +343,43 @@ a:hover {
     font-family: Cormorant_Garamond;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 2.5vw;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+td {
+    padding: 1vw;
+    font-size: 3vw;
+    margin: 0 2vw;
+    background-color: #331243;
+    display: flex;
+    justify-content: center;
+    color: #E9E9F4;
+    width: 100%;
+}
+
+.first td {
+    padding-top: 2vw;
+    padding-bottom: 0;
+    border-radius: 0.2vw 0.2vw 0 0;
+}
+
+.second td {
+    padding-top: 0vw;
+    padding-bottom: 2vw;
+    border-radius: 0 0 0.2vw 0.2vw;
 }
 
 .rsvp button {

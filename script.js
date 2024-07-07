@@ -1,6 +1,65 @@
 window.addEventListener("load", () => {
+    countdown();
     mobileView();
 });
+
+function countdown() {
+    var countDownDate = new Date("Dec 29, 2024 14:00:00").getTime();
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+    document.getElementById("secs").innerHTML = seconds;
+
+    // If the count down is finished, write some text
+    if (distance <= 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Today is the day!";
+        document.getElementById("countdown_table").style.display = "none";
+    }
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("mins").innerHTML = minutes;
+        document.getElementById("secs").innerHTML = seconds;
+
+        // If the count down is finished, write some text
+        if (distance <= 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Today is the day!";
+            document.getElementById("countdown_table").style.display = "none";
+        }
+    }, 1000);
+}
 
 function mobileView() {
     if (window.matchMedia('screen and (max-width: 450px)').matches) {
@@ -137,6 +196,12 @@ function mobileView() {
         rsvp.style.padding = "3vh 8vw";
 
         rsvp.children[0].style.fontSize = "6.5vw";
+        rsvp.children[0].style.marginBottom = "6.5vw";
+        for (let j = 0; j <  document.getElementsByTagName("td").length; j++) {
+            const element =  document.getElementsByTagName("td")[j];
+            element.style.fontSize = "5.5vw";
+            
+        }
         // var rsvp_button = rsvp.children[1].children[0];
         // rsvp_button.style.fontSize = "4.5vw";
         // rsvp_button.style.padding = "2.5vh 15vw";
@@ -144,9 +209,10 @@ function mobileView() {
         // footer
         document.getElementsByClassName("footer")[0].style.fontSize = "2vw";
 
-    } else {
-        if (!document.getElementById("dropdown").classList.value.includes("no_show")) {
-            document.getElementById("dropdown").classList.toggle("no_show");
-        }
-    }
+    } 
+    // else {
+    //     if (!document.getElementById("dropdown").classList.value.includes("no_show")) {
+    //         document.getElementById("dropdown").classList.toggle("no_show");
+    //     }
+    // }
 }
